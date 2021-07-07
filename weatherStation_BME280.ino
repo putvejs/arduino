@@ -88,7 +88,7 @@ void setup(void) {
     mqttClient.publish(String(MQTT_TOPIC_STATE).c_str(), "BME readings done",true);
     publishStatus =  mqttClient.publish("pagrabs/bme280/temp", String(temperature).c_str(),true);
     publishStatus =  mqttClient.publish("pagrabs/bme280/hum", String(humidity).c_str(),true);
-    publishStatus =  mqttClient.publish("pagrabs/bme280/sp", ,true);
+    publishStatus =  mqttClient.publish("pagrabs/bme280/sp", String(pressure).c_str(),true);
     publishStatus =  mqttClient.publish("pagrabs/bme280/alt", String(alt).c_str(),true);
     publishStatus =  mqttClient.publish("pagrabs/bme280/vv", String(Batt).c_str(),true);
     delay(2000);   
