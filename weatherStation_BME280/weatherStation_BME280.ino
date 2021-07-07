@@ -40,7 +40,7 @@ WiFiClient espClient;
 
 //mqtt definition
 
-String MQTT_TOPIC_STATE = CLIENT_ID+"/"+DEVICE_ID+"/status";
+const char *MQTT_TOPIC_STATE = CLIENT_ID+"/"+DEVICE_ID+"/status";
 
 //#define MQTT_TOPIC_STATE 
 #define MQTT_PUBLISH_DELAY 60000
