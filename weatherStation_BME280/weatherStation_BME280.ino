@@ -40,7 +40,7 @@ WiFiClient espClient;
 
 //mqtt definition
 
-const char *MQTT_TOPIC_STATE = MQTT_TOPIC_STATUS;
+const char *MQTT_TOPIC_STATE = "pagrabs/bme280/status";
 
 //#define MQTT_TOPIC_STATE 
 #define MQTT_PUBLISH_DELAY 60000
