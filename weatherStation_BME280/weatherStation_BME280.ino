@@ -101,8 +101,8 @@ void setup(void) {
     }
 
   
-    //ESP.deepSleep(18000);
-   ESP.deepSleep(600e6);
+   ESP.deepSleep(18000);
+   //ESP.deepSleep(600e6);
    //delay(1800000);
    
 
