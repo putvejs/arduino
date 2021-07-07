@@ -55,7 +55,6 @@ PubSubClient mqttClient(espClient);
 void setup(void) {
   Serial.begin(115200);
   Serial.setTimeout(2000);
-  Serial.println ("Serial set");
 
   status = bme.begin(0x76);  
   if (!status) {
